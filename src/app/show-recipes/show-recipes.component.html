@@ -1,0 +1,12 @@
+<h2>Recipe List</h2>
+
+<div class="oneRecipe" *ngFor="public let recipe of recipes">
+    <div class="segmentRecipe">
+    Dish Name: {{recipe.name}} <br/><br/>
+    Ingredients: {{recipe.ingredients}}<br /><br/>
+    Type: {{recipe.type}}<br/><br/>
+    Details: {{recipe.details}}<br/>
+    <button (click)="onDelete(recipe.name)">Delete</button>
+    </div>
+</div>
+

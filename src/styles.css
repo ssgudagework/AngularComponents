@@ -1,1 +1,91 @@
-/* You can add global styles to this file, and also import other style files */
+h1{
+    text-align: center;
+    padding-top: 100px;
+
+}
+h2{
+    font-size: 24px;
+}
+
+.recipeForm{
+    background-color: rgb(215, 215, 248);
+    width: 40%;
+    margin: 100px;
+    border-radius: 20px;
+    height: 500px;
+    text-align: center;
+    margin-top: 50px;
+}
+.recipeForm input{
+    font-size: 18px;
+}
+.text{
+    width: 75%;
+    height: 50px;
+}
+.category{
+    text-align: start;
+    padding-left: 72px;
+    
+}
+.category label{
+    font-size: 16px;
+    margin-right: 20px;
+}
+.category select{
+    width: 40%;
+    height: 50px;
+    font-size: 16px;
+}
+
+.recipe{
+    background-color: rgb(252, 232, 232);
+    width: 40%;
+    margin: 100px;
+    border-radius: 20px;
+    margin-top: 50px;
+    font-size: 20px;
+}
+.submit{
+    background-color: rgb(154, 154, 247);
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 22px;
+    border-radius: 10px;
+}
+
+.ajubaju{
+    display: flex;
+}
+
+.recipe h2{
+   text-align: center;
+}
+.oneRecipe{
+    border-radius: 4px;
+    background-color: rgb(250, 201, 201);
+    border: 2px solid rgb(247, 130, 130);
+    width: 30%;
+    padding-left: 30px;
+    margin-left: 35px;
+    display: flex;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.segmentRecipe{
+    height: 200px;
+    padding-top: 10px;
+    
+}
+.segmentRecipe button{
+    margin-left: 30px;
+    margin-top: 8px;
+    background-color: rgb(49, 46, 46);
+    width: 72px;
+    height: 28px;
+    color: white;
+    border-radius: 4px;
+}
+

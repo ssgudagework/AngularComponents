@@ -1,0 +1,52 @@
+<!-- String Interpolation to add data -->
+<h3>{{serverName}} is currently {{serverRunning}} and the server number is {{serverNum}}. {{isServerRunning1()}} </h3>
+
+<!-- <button (click)="isServerRunning()" >Find status</button><br/> -->
+<!-- <button (click)="" >Click me</button> -->
+
+<!-- Property binding  -->
+{{serverCreationStatus}}
+<button (click)="onCreateServer()" [disabled]="!allowNewServers">Add new Servers</button>
+
+<p [innerText]="allowNewServers"></p>
+
+<!-- ngIf else -->
+<div *ngIf="allowNewServers; else elseBlock">
+    Server is allowed
+</div><br/>
+<ng-template #elseBlock>
+    Server is not allowed
+</ng-template><br/>
+
+<!-- ngFor -->
+<p *ngFor="let hero of superHeros">
+    {{hero.id}} || {{hero.name}}
+</p>
+
+<!-- One way data binding -->
+{{newServerName}}
+<input type="text" placeholder="Enter Server Name" (input)="onUpdateServer($event)"><br/><br/>
+
+<!-- Two ways data binding(add formsModule in imports od app.module.ts) -->
+
+{{newServerAddress}}
+<input type="text" [(ngModel)]="newServerAddress" >
+
+<h3>Lets Create a simple form</h3>
+
+    
+    <label>My name is {{name}}</label>
+    <input type="text" placeholder="Name" [(ngModel)]="name" >
+    <p>Entered name is {{name}} </p>
+
+    <label>My id is {{id}} </label>
+    <input type="number" placeholder="Id" [(ngModel)]="id" ><br/><br/>
+
+    <label>My college is {{collegeName}} </label>
+    <input type="text" placeholder="College Name" [(ngModel)]="collegeName" ><br/><br/>
+
+    <label>I am Placed in {{placedIn}} </label>
+    <input type="text" placeholder="Placed in" [(ngModel)]="placedIn" >
+
+
+
